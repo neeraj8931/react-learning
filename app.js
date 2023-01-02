@@ -1,8 +1,11 @@
+import React from 'react';
+import ReactDOM  from 'react-dom';
+
 const heading1= React.createElement(
     "h1",
 {
     id:"heading-1"
-},
+}, 
 "Heading 1"
 );
 
@@ -11,7 +14,7 @@ const heading2 = React.createElement(
     {
         id:"heading-2"
     },
-    "Heading 2"
+    "Heading 2, using parcel bundeler"
 );
 
 const container = React.createElement(
