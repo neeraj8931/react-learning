@@ -1,0 +1,60 @@
+/*  Header Component */
+
+body {
+  margin: 0;
+}
+
+header {
+  background: #b3864d;
+  color: white;
+  padding: 1rem 2rem;
+  display: flex;
+  justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  ul.menu-items {
+    display: inline-flex;
+    list-style: none;
+  }
+
+  li.menu-item {
+    margin: 0 20px;
+  }
+  .navigation-menu {
+    font-family: cursive;
+    letter-spacing: 2px;
+  }
+
+  h5.logo-name {
+    margin: 1rem;
+    font-size: 29px;
+    letter-spacing: 3px;
+    font-family: cursive;
+  }
+}
+
+/* Main Component*/
+
+main {
+  min-height: 50vh;
+}
+
+/* Footer Component*/
+footer {
+  color: #fff;
+  background: #b3864d;
+  padding: 1rem 2rem;
+  text-align: center;
+}
+
+ul.footer-links {
+  list-style: none;
+  display: inline-flex;
+  letter-spacing: 2px;
+  font-family: cursive;
+  justify-content: center;
+}
+
+li.footer-link-item {
+  margin: 0 20px;
+}
