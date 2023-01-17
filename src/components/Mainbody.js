@@ -1,8 +1,11 @@
-
+import Restaurants from "./Restaurants";
+import Searchbar from "./Searchbar";
 
 const Mainbody = ()=>{
     return (
-        <main></main>
+        <main className="page-width">
+            <Restaurants></Restaurants>
+        </main>
     )
 }
 
