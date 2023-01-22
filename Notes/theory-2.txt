@@ -1,0 +1,88 @@
+1. What is NPM ??
+npm, Inc. is a company founded in 2014, and was acquired by GitHub in 2020. npm is a critical part of the JavaScript community and helps support one of the largest developer ecosystems in the world.
+npm is lots of things.
+npm is the package manager for Node.js. It was created in 2009 as an open source project to help JavaScript developers easily share packaged modules of code.
+The npm Registry is a public collection of packages of open-source code for Node.js, front-end web apps, mobile apps, robots, routers, and countless other needs of the JavaScript community.
+npm is the command line client that allows developers to install and publish those packages.
+
+2. What is Parcel/Webpack?? Why do we need it?
+A module bundler is a tool that takes pieces of JavaScript and their dependencies and bundles them into a single file, usually for use in the browser. You may have used tools such as Browserify, Webpack, Rollup or one of many others.
+
+Today we will only be discussing about Parcel JS.
+Parcel is a web application bundler, differentiated by its developer experience. It offers blazing fast performance utilizing multicore processing, and requires zero configuration.
+Parcel.js is exactly what many newbie developers want, A simple, low-configuration bundler that you can get up and running with quickly without much hustle in learning the tool.
+heart_eyes Zero config – Parcel supports many languages and file types out of the box, from web technologies like HTML, CSS, and JavaScript, to assets like images, fonts, videos, and more. It has a built-in dev server with hot reloading, beautiful error diagnostics, and much more. No configuration needed!
+zap Lighting fast – Parcel's JavaScript compiler is written in Rust for native performance. Your code is built in parallel using worker threads, utilizing all of the cores on your machine. Everything is cached, so you never build the same code twice. It's like using watch mode, but even when you restart Parcel!
+rocket Automatic production optimization – Parcel optimizes your whole app for production automatically. This includes tree-shaking and minifying your JavaScript, CSS, and HTML, resizing and optimizing images, content hashing, automatic code splitting, and much more.
+dart Ship for any target – Parcel automatically transforms your code for your target environments. From modern and legacy browser support, to zero config JSX and TypeScript compilation, Parcel makes it easy to build for any target – or many!
+earth_africa Scalable – Parcel requires zero configuration to get started. But as your application grows and your build requirements become more complex, it's possible to extend Parcel in just about every way. A simple configuration format and powerful plugin system that's designed from the ground up for performance means Parcel can support projects of any size.
+
+
+3. What is Parcel Cache??
+Reference: https://betterprogramming.pub/parcel-js-easy-javascript-bundling-ecddac0783f7
+
+The .cache folder (or .parcel-cache in parcel v2) stores information about your project when parcel builds it, so that when it rebuilds, it doesn't have to re-parse and re-analyze everything from scratch. It's a key reason why parcel can be so fast in development mode. I think committing it to git would be a bad idea - it would add a large number of (unnecessary) changes to your commit history, and it could easily get out-of-sync with the code that generated it.
+
+4. What is npx?
+NPX: The npx stands for Node Package Execute and it comes with the npm, when you installed npm above 5.2.0 version then automatically npx will installed. It is an npm package runner that can execute any package that you want from the npm registry without even installing that package. The npx is useful during a single time use package. 
+
+5. What is difference between dependency and Devdependency??
+Dependencies: In package.json file, there is an object called dependencies and it consists of all the packages that are used in the project with its version number. So, whenever you install any library that is required in your project that library you can find it in the dependencies object. 
+
+Dev Dependencies: In package.json file, there is an object called as dev Dependencies and it consists of all the packages that are used in the project in its development phase and not in the production or testing environment with its version number. So, whenever you want to install any library that is required only in your development phase then you can find it in the dev Dependencies object. 
+
+Use the below command to add more dev Dependencies in your project:
+npm install <package name> --save-dev
+
+6. What is tree Shaking??
+Tree shaking is a term used as a means to eliminate code that isn't in use, or dead-code, as we call it. You can also think of it like choosing 3-4 relevant quotes from a book to write an excellent paper. If you only need 3-4 relevant quotes, why use the entire book?
+
+Whenever a code bundler, like webpack, builds our web application for production. It does tree shaking. Code bundlers like webpack do their best to remove dead code, or unused code, to reduce the bundle size of your application when you prepare your code to be able to be used for production. Unfortunately, it can't catch everything, and that because we sometimes write code that isn't tree shaking friendly.
+
+7. What is Hot module replacement??
+Developing a JavaScript application involves reloading the browser each time you save code changes in order to refresh the user interface.
+
+Developer tools like Webpack can even run in watch mode to monitor your project files for changes. As soon as Webpack detected a change, it will rebuild the application and the browser is reloaded automatically.
+
+8. Superpowers of arcel.js??
+a) Dev server
+b) Hot reloading
+c) Diagnostics
+d) Reliable caching
+e) Tree shaking
+f) Minification
+g) Image optimization
+
+9. A local .gitignore file is usually placed in the root directory of a project. You can also create a global .gitignore file and any entries in that file will be ignored in all of your Git repositories.
+
+To create a local .gitignore file, create a text file and name it .gitignore (remember to include the . at the beginning). Then edit this file as needed. Each new line should list an additional file or folder that you want Git to ignore.
+
+The entries in this file can also follow a matching pattern.
+
+* is used as a wildcard match
+/ is used to ignore pathnames relative to the .gitignore file
+# is used to add comments to a .gitignore file
+This is an example of what the .gitignore file could look like:
+
+# Ignore Mac system files
+.DS_store
+
+# Ignore node_modules folder
+node_modules
+
+# Ignore all text files
+*.txt
+
+# Ignore files related to API keys
+.env
+
+# Ignore SASS config files
+.sass-cache
+
+10. What is difference between package.json and package-lock.json ??
+https://www.geeksforgeeks.org/difference-between-package-json-and-package-lock-json-files/
+
+11. 
+
+
+
